@@ -1,0 +1,49 @@
+#tohide3 {display: none}
+#tohide2 {display: none}
+#tohide1 {display: none}
+#tohide4 {display: none}
+
+body { 
+  /* The image used */
+  background-image: url("../img/bg.jpg");
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+td{
+  text-align:center;
+}
+#sonchu{
+  width:250px;
+  height:50px;
+  font-size:25px;
+  font-family:Microsoft JhengHei;
+}
+#but{
+  text-align:center;
+}
+table{
+  font-family:Microsoft JhengHei;
+}
+.widthj{
+  width:100px;
+}
+.widthjp{
+  width:80px;
+}
+.num{
+  font-size:30px;
+}
+pie{
+  font-size: 30px;
+}
+#point{
+  height: 50px;
+  width: 400px;
+}
