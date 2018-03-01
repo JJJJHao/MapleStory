@@ -10,38 +10,69 @@
 <link rel="stylesheet" type="text/css" href="css/allcss.css">
 </head>
 <body background="bg.jpg">
+<div id="title"><b>楓之谷 NOVA商店第二季 祕法符文效益計算機</b></div>
+<div id="detail">由於這次的第二季NOVA商店出了祕法符文，故寫了這個計算程式來計算買哪個地區的符文會有最高效益</div>
 <table border="2" width="100%" height="100%">
-  <tr><td align="center" valign="center" colspan="5"><font size="5">
-    <b>楓之谷 NOVA商店第二季 祕法符文效益計算機</b>
-  </font></td></tr>
   <tr>
-    <td colspan="2"><font size="6">隊徽</font></td>
-    <td><img class="widthj" src="img/team_A.png"/></td>
-    <td><img class="widthj" src="img/team_B.png" width="50%"/></td>
-    <td><img class="widthj" src="img/team_C.png" width="50%"/></td>
+    <td id="col1">勾選區</td>
+    <td id="col2">符文圖片</td>
+    <td id="col3">符文名稱</td>
+    <td id="col4">符文現在等級</td>
+    <td id="col5">符文成長值</td>
+    <td id="col6">高級服務</td>
+    <td id="col7">每日可取得顆數/硬幣數</td>
+    <td id="col8">備註</td>
   </tr>
   <tr>
-    <td colspan="2"><font size="6">隊徽</font></td>
-    <td><img class="widthj" src="img/team_A.png"/></td>
-    <td><img class="widthj" src="img/team_B.png" width="50%"/></td>
-    <td><img class="widthj" src="img/team_C.png" width="50%"/></td>
+    <td><input type="checkbox" name="fuwen1_YN"></td>
+    <td><img src="img/fuWen1.png"/></td>
+    <td>秘法符文：消逝的旅途</td>
+    <td><input type="text" class name="fuwen1_LEVEL" maxlength="3">(1~20)</td>
+    <td><input type="text" name="fuwen1_GROWTH" maxlength="4"></td>
+    <td rowspan="4"><input type="checkbox" name="VIP_YN"></td>
+    <td><input type="text" name="fuwen1_NUM" maxlength="4"></td>
+    <td>備註11111</td>
   </tr>
   <tr>
-    <td colspan="2"><font size="6">隊徽</font></td>
-    <td><img class="widthj" src="img/team_A.png"/></td>
-    <td><img class="widthj" src="img/team_B.png" width="50%"/></td>
-    <td><img class="widthj" src="img/team_C.png" width="50%"/></td>
+    <td><input type="checkbox" name="fuwen1_YN"></td>
+    <td><img src="img/fuWen2.png"/></td>
+    <td>秘法符文：啾啾島</td>
+    <td><input type="text" class name="fuwen1_LEVEL" maxlength="3">(1~20)</td>
+    <td><input type="text" name="fuwen1_GROWTH" maxlength="4"></td>
+    <td><input type="text" name="fuwen1_NUM" maxlength="4"></td>
+    <td>備註22222</td>
   </tr>
   <tr>
-    <td colspan="2"><font size="6">隊徽</font></td>
-    <td><img class="widthj" src="img/team_A.png"/></td>
-    <td><img class="widthj" src="img/team_B.png" width="50%"/></td>
-    <td><img class="widthj" src="img/team_C.png" width="50%"/></td>
+    <td><input type="checkbox" name="fuwen1_YN"></td>
+    <td><img src="img/fuWen3.png"/></td>
+    <td>秘法符文：拉契爾恩</td>
+    <td><input type="text" class name="fuwen1_LEVEL" maxlength="3">(1~20)</td>
+    <td><input type="text" name="fuwen1_GROWTH" maxlength="4"></td>
+    <td><input type="text" name="fuwen1_NUM" maxlength="4"></td>
+    <td>備註33333</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="fuwen1_YN"></td>
+    <td><img src="img/fuWen4.png"/></td>
+    <td>秘法符文：阿爾卡娜</td>
+    <td><input type="text" class name="fuwen1_LEVEL" maxlength="3">(1~20)</td>
+    <td><input type="text" name="fuwen1_GROWTH" maxlength="4"></td>
+    <td><input type="text" name="fuwen1_NUM" maxlength="4"></td>
+    <td>備註44444</td>
   </tr>
 </table>
 <div id="but"><input id="sonchu" type="button" value="計算最高效益"></div>
-<table>
-  <tr><td><b id="ans">顯示區域</b></td></tr>
+<table border="2" width="100%">
+  <tr>
+    <td><b>使用方式</b></td>
+    <td>blablabla</td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>結果</b></td>
+  </tr>
+  <tr>
+    <td colspan="2" id="ans">答案答案答案答案答案答案</td>
+  </tr>
 </table>
 
 </body>

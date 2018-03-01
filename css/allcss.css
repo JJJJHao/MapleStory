@@ -28,20 +28,25 @@ td{
 #but{
   text-align:center;
 }
+div{
+  text-align: center;
+  font-family:Microsoft JhengHei;
+}
+#title{
+  font-size: 35px;
+}
+#detail{
+  font-size: 15px;
+}
 table{
   font-family:Microsoft JhengHei;
+  text-align:center;
 }
 .widthj{
   width:100px;
 }
 .widthjp{
   width:80px;
-}
-.num{
-  font-size:30px;
-}
-pie{
-  font-size: 30px;
 }
 #point{
   height: 50px;
