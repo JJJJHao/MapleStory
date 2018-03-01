@@ -1,0 +1,42 @@
+#tohide3 {display: none}
+#tohide2 {display: none}
+#tohide1 {display: none}
+#tohide4 {display: none}
+
+td{
+  text-align:center;
+}
+#sonchu{
+  width:400px;
+  height:100px;
+  font-size:50px;
+  font-family:Microsoft JhengHei;
+}
+#sonchu2{
+  width:180px;
+  height:50px;
+  font-size:20px;
+  font-family:Microsoft JhengHei;
+}
+#but{
+  text-align:center;
+}
+table{
+  font-family:Microsoft JhengHei;
+}
+.widthj{
+  width:100px;
+}
+.widthjp{
+  width:80px;
+}
+.num{
+  font-size:30px;
+}
+pie{
+  font-size: 30px;
+}
+#point{
+  height: 50px;
+  width: 400px;
+}
