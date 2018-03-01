@@ -2,15 +2,15 @@ function myFunction1() {
     var checkBox = document.getElementById('check1');
 		var coll = document.getElementsByClassName('row1');
     if (checkBox.checked == false){
-			for(var i=0, len=coll.length; i<len; i++){
-				coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
-				coll[i].readOnly = true;
-			}
+		for(var i=0, len=coll.length; i<len; i++){
+			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
+			coll[i].disabled = true;
+		}
     } else {
-			for(var i=0, len=coll.length; i<len; i++){
-				coll[i].style["background-color"] = 'white';
-				coll[i].readOnly = false;
-			}
+		for(var i=0, len=coll.length; i<len; i++){
+			coll[i].style["background-color"] = 'white';
+			coll[i].disabled = false;
+		}
     }
 }
 function myFunction2() {
@@ -19,12 +19,12 @@ function myFunction2() {
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
-			coll[i].readOnly = true;
+			coll[i].disabled = true;
 		}
 	} else {
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'white';
-			coll[i].readOnly = false;
+			coll[i].disabled = false;
 		}
 	}
 }
@@ -34,12 +34,12 @@ function myFunction3() {
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
-			coll[i].readOnly = true;
+			coll[i].disabled = true;
 		}
 	} else {
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'white';
-			coll[i].readOnly = false;
+			coll[i].disabled = false;
 		}
 	}
 }
@@ -49,12 +49,12 @@ function myFunction4() {
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
-			coll[i].readOnly = true;
+			coll[i].disabled = true;
 		}
 	} else {
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'white';
-			coll[i].readOnly = false;
+			coll[i].disabled = false;
 		}
 	}
 }

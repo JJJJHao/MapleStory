@@ -4,7 +4,7 @@
 <title>楓之谷 NOVA商店第二季 祕法符文效益計算機</title>
 <meta charset="utf-8">
 <script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/myjs.js"></script>
+<script src="js/checkbox.js"></script>
 <link href="css/jquery-ui.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/allcss.css">
@@ -31,38 +31,38 @@
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check1" onclick="myFunction1()"></td>
     <td><img src="img/fuWen1.png"/></td>
     <td>秘法符文：消逝的旅途</td>
-    <td><input type="text" class="row1" name="fuwen1_LEVEL" size="5" value="1" readonly/></td>
-    <td><input type="text" class="row1" name="fuwen1_GROWTH" size="5" value="1" readonly/></td>
+    <td><input type="text" class="row1" name="fuwen1_LEVEL" size="5" value="1" disabled/></td>
+    <td><input type="text" class="row1" name="fuwen1_GROWTH" size="5" value="1" disabled/></td>
     <td rowspan="4"><input type="checkbox" name="VIP_YN" id="checkVIP"></td>
-    <td colspan="2">符文數：<input type="text" class="row1" name="fuwen1_NUM" size="5" value="8" readonly/></td>
+    <td colspan="2">符文數：<input type="text" class="row1" name="fuwen1_NUM" size="5" value="8" disabled/></td>
     <td>每日5個子任務+完成送3個=8個</td>
   </tr>
   <tr>
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check2" onclick="myFunction2()"></td>
     <td><img src="img/fuWen2.png"/></td>
     <td>秘法符文：啾啾島</td>
-    <td><input type="text" class="row2" name="fuwen2_LEVEL" size="5" value="1" readonly/></td>
-    <td><input type="text" class="row2" name="fuwen2_GROWTH" size="5" value="1" readonly/></td>
-    <td colspan="2">符文數：<input type="text" class="row2" name="fuwen2_NUM" size="5" value="15" readonly/></td>
+    <td><input type="text" class="row2" name="fuwen2_LEVEL" size="5" value="1" disabled/></td>
+    <td><input type="text" class="row2" name="fuwen2_GROWTH" size="5" value="1" disabled/></td>
+    <td colspan="2">符文數：<input type="text" class="row2" name="fuwen2_NUM" size="5" value="15" disabled/></td>
     <td>困難肚子餓的武藤3場=15個</td>
   </tr>
   <tr>
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check3" onclick="myFunction3()"></td>
     <td><img src="img/fuWen3.png"/></td>
     <td>秘法符文：拉契爾恩</td>
-    <td><input type="text" class="row3" name="fuwen3_LEVEL" size="5" value="1" readonly/></td>
-    <td><input type="text" class="row3" name="fuwen3_GROWTH" size="5" value="1" readonly/></td>
-    <td colspan="2">過關層數：<input type="text" class="row3" name="fuwen3_NUM" size="5" value="10" readonly/></td>
+    <td><input type="text" class="row3" name="fuwen3_LEVEL" size="5" value="1" disabled/></td>
+    <td><input type="text" class="row3" name="fuwen3_GROWTH" size="5" value="1" disabled/></td>
+    <td colspan="2">過關層數：<input type="text" class="row3" name="fuwen3_NUM" size="5" value="10" disabled/></td>
     <td>請填寫毀夢者固定會打到的過關層數<br/>以下計算會預設夢都五隻NPC每日給的硬幣為30個<br/>註：週末高級服務可打5場</td>
   </tr>
   <tr>
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check4" onclick="myFunction4()"></td>
     <td><img src="img/fuWen4.png"/></td>
     <td>秘法符文：阿爾卡娜</td>
-    <td><input type="text" class="row4" name="fuwen4_LEVEL" size="5" value="1" readonly/></td>
-    <td><input type="text" class="row4" name="fuwen4_GROWTH" size="5" value="1" readonly/></td>
-    <td>硬幣數：<input type="text" class="row4" name="fuwen4_NUM" size="5" value="30" readonly/></td>
-    <td>硬幣數：<input type="text" class="row4" name="fuwen4_VIP" size="5" value="40" readonly/></td>
+    <td><input type="text" class="row4" name="fuwen4_LEVEL" size="5" value="1" disabled/></td>
+    <td><input type="text" class="row4" name="fuwen4_GROWTH" size="5" value="1" disabled/></td>
+    <td>硬幣數：<input type="text" class="row4" name="fuwen4_NUM" size="5" value="30" disabled/></td>
+    <td>硬幣數：<input type="text" class="row4" name="fuwen4_VIP" size="5" value="40" disabled/></td>
     <td>平日3場最高能給30枚硬幣<br/>註：週末高級服務有30%分數加成，且硬幣上限提高至40枚</td>
   </tr>
 </table>
@@ -80,14 +80,14 @@
       4.填寫平日及週末分別能獲得的符文、毀夢者過關層數及精靈救援者3場的硬幣數量
     </td>
     <td>
-        <img src="img/growth.jpg" height="50%" witdh="50%"/>
+        <img src="img/growth.jpg" height="60%" witdh="60%"/>
     </td>
   </tr>
   <tr>
-    <td colspan="3"><b>結果</b></td>
+    <td colspan="3"><b>計算結果</b></td>
   </tr>
   <tr>
-    <td colspan="3" id="ans">答案答案答案答案答案答案</td>
+    <td colspan="3" id="ans">&nbsp;</td>
   </tr>
 </table>
 
