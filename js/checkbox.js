@@ -1,6 +1,6 @@
 function myFunction1() {
-    var checkBox = document.getElementById('check1');
-		var coll = document.getElementsByClassName('row1');
+    var checkBox = $('#check1')[0];
+	var coll = $('.row1');
     if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
@@ -14,8 +14,8 @@ function myFunction1() {
     }
 }
 function myFunction2() {
-	var checkBox = document.getElementById('check2');
-	var coll = document.getElementsByClassName('row2');
+    var checkBox = $('#check2')[0];
+	var coll = $('.row2');
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
@@ -29,8 +29,8 @@ function myFunction2() {
 	}
 }
 function myFunction3() {
-	var checkBox = document.getElementById('check3');
-	var coll = document.getElementsByClassName('row3');
+    var checkBox = $('#check3')[0];
+	var coll = $('.row3');
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
@@ -44,8 +44,8 @@ function myFunction3() {
 	}
 }
 function myFunction4() {
-	var checkBox = document.getElementById('check4');
-	var coll = document.getElementsByClassName('row4');
+    var checkBox = $('#check4')[0];
+	var coll = $('.row4');
 	if (checkBox.checked == false){
 		for(var i=0, len=coll.length; i<len; i++){
 			coll[i].style["background-color"] = 'rgba(200, 200, 200, 0.5)';
