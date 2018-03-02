@@ -1,3 +1,22 @@
+$( document ).ready(function() {
+	/* calculate next Wednesday */
+	var day_offset = [3, 2, 1, 0, 6, 5, 4];
+	var day = new Date().getDay();
+	var myDate = new Date();
+	myDate.setDate(myDate.getDate() + day_offset[day]);
+	var str = "(" + (myDate.getMonth() + 1) + "/" + myDate.getDate() + ")";
+	$('#wed').html(str);
+	
+	/* calculate the weekend */
+	day_offset = [-1, -2, -3, -4, 2, 1, 0];
+	day = new Date().getDay();
+	myDate = new Date();
+	myDate.setDate(myDate.getDate() + day_offset[day]);
+	var str = "(" + (myDate.getMonth() + 1) + "/" + myDate.getDate() + ", ";
+	myDate.setDate(myDate.getDate() + 1);
+	var str = str + (myDate.getMonth() + 1) + "/" + myDate.getDate() + ")";
+	$('#weekend').html(str);
+});
 function myFunction1() {
     var checkBox = $('#check1')[0];
 	var coll = $('.row1');
