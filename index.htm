@@ -26,7 +26,8 @@
     <td id="col6"><b>高級服務</b></td>
     <td id="col7"><b>平日可取得數量</b></td>
     <td id="col8"><b>週末可取得數量</b></td>
-    <td id="col9"><b>備註</b></td>
+    <td id="col9"><b>手持硬幣量</b></td>
+    <td id="col10"><b>備註</b></td>
   </tr>
   <tr>
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check1" onclick="myFunction1()"></td>
@@ -36,6 +37,7 @@
     <td><input type="text" class="row1" name="fuwen1_GROWTH" size="5" value="1" disabled/></td>
     <td rowspan="4"><input type="checkbox" name="VIP_YN" id="checkVIP"></td>
     <td colspan="2">符文數：<input type="text" class="row1" name="fuwen1_NUM" size="5" value="8" disabled/></td>
+    <td rowspan="2" class="crossCell"></td>
     <td>每日5個子任務+完成送3個=8個</td>
   </tr>
   <tr>
@@ -44,7 +46,7 @@
     <td>秘法符文：啾啾島</td>
     <td><input type="text" class="row2" name="fuwen2_LEVEL" size="5" value="1" disabled/></td>
     <td><input type="text" class="row2" name="fuwen2_GROWTH" size="5" value="1" disabled/></td>
-    <td colspan="2">符文數：<input type="text" class="row2" name="fuwen2_NUM" size="5" value="15" disabled/></td>
+    <td colspan="2">3場符文總數：<input type="text" class="row2" name="fuwen2_NUM" size="5" value="15" disabled/></td>
     <td>困難肚子餓的武藤3場=15個</td>
   </tr>
   <tr>
@@ -53,8 +55,9 @@
     <td>秘法符文：拉契爾恩</td>
     <td><input type="text" class="row3" name="fuwen3_LEVEL" size="5" value="1" disabled/></td>
     <td><input type="text" class="row3" name="fuwen3_GROWTH" size="5" value="1" disabled/></td>
-    <td colspan="2">過關層數：<input type="text" class="row3" name="fuwen3_NUM" size="5" value="10" disabled/></td>
-    <td>請填寫毀夢者固定會打到的過關層數<br/>以下計算會預設夢都五隻NPC每日給的硬幣為30個<br/>註：週末高級服務可打5場</td>
+    <td colspan="2">毀夢者過關層數：<input type="text" class="row3" name="fuwen3_NUM" size="5" value="10" disabled/></td>
+    <td><img src="https://i.imgur.com/Zb769Vp.png"/>：<input type="text" class="row3" name="fuwen3_COIN" size="5" value="0" disabled/></td>
+    <td>請填寫毀夢者固定會打到的過關層數<br/>預設夢都五隻NPC給的硬幣為30個<br/>註：週末高級服務可打5場</td>
   </tr>
   <tr>
     <td class="rowData"><input type="checkbox" name="fuwen1_YN" id="check4" onclick="myFunction4()"></td>
@@ -62,14 +65,15 @@
     <td>秘法符文：阿爾卡娜</td>
     <td><input type="text" class="row4" name="fuwen4_LEVEL" size="5" value="1" disabled/></td>
     <td><input type="text" class="row4" name="fuwen4_GROWTH" size="5" value="1" disabled/></td>
-    <td>硬幣數：<input type="text" class="row4" name="fuwen4_NUM" size="5" value="30" disabled/></td>
-    <td>硬幣數：<input type="text" class="row4" name="fuwen4_VIP" size="5" value="40" disabled/></td>
-    <td>平日3場最高能給30枚硬幣<br/>註：週末高級服務有30%分數加成，且硬幣上限提高至40枚</td>
+    <td>3場硬幣總數：<input type="text" class="row4" name="fuwen4_NUM" size="5" value="30" disabled/></td>
+    <td>3場硬幣總數：<input type="text" class="row4" name="fuwen4_VIP" size="5" value="40" disabled/></td>
+    <td><img src="https://i.imgur.com/k8X2lFD.png"/>：<input type="text" class="row4" name="fuwen4_COIN" size="5" value="0" disabled/></td>
+    <td>平日3場最高能給30枚硬幣<br/>註：週末高級服務有30%分數加成<br/>且硬幣上限提高至40枚</td>
   </tr>
 </table>
 <br/>
 <div class="detail">至週三<b id="wed"></b>為止，預算NOVA硬幣：<input type="text" name="budget" size="10" value="4000"></div>
-<div id="but"><input type="checkbox">今日已打完每日<input id="sonchu" type="button" value="計算最高效益" onclick="calculateGO()"></div>
+<div id="but"><input type="checkbox" id="checkToday">今日已打完每日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="sonchu" type="button" value="計算最高效益" onclick="calculateGO()"></div>
 <br/>
 <table border="2" width="70%" align="center">
   <tr>
@@ -89,7 +93,13 @@
     <td colspan="3"><b>計算結果</b></td>
   </tr>
   <tr>
-    <td colspan="3" id="ans">&nbsp;</td>
+    <td colspan="3" id="ans">
+      <tt id="Ans1"><img src="img/fuWen1.png"/>購買<b id="AnsBlock1"></b>顆</tt>
+      <tt id="Ans2"><img src="img/fuWen2.png"/>購買<b id="AnsBlock2"></b>顆</tt>
+      <tt id="Ans3"><img src="img/fuWen3.png"/>購買<b id="AnsBlock3"></b>顆</tt>
+      <tt id="Ans4"><img src="img/fuWen4.png"/>購買<b id="AnsBlock4"></b>顆</tt>
+      &nbsp;
+    </td>
   </tr>
 </table>
 

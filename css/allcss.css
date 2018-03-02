@@ -43,3 +43,31 @@ div, table{
 #but{
   text-align:center;
 }
+#ans{
+  text-align: center;
+  font-size:25px;
+  font-weight: 700;
+  font-family:Microsoft JhengHei;
+}
+table td.crossCell
+{
+   background-image: linear-gradient(to bottom right,  transparent calc(50% - 1px), black, transparent calc(50% + 1px)); 
+}
+/* #Ans1{
+  font-size:20px;
+  font-weight: 500;
+  font-family:Microsoft JhengHei;
+  display: initial;
+} */
+#Ans1{
+  font-size:20px;
+  font-weight: 500;
+  font-family:Microsoft JhengHei;
+  display: none;
+}
+#Ans2, #Ans3, #Ans4{
+  font-size:20px;
+  font-weight: 500;
+  font-family:Microsoft JhengHei;
+  display: none;
+}
